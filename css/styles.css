@@ -80,6 +80,7 @@ img {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -96,11 +97,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-header {
   color: var(--navyblue);
-  margin-right: 76px;
 }
 
 .logo-footer {
@@ -160,6 +161,8 @@ img {
 .hero {
   background-color: var(--navyblue);
   display: flex;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -170,7 +173,6 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 188px;
   margin: auto;
 
 
@@ -186,7 +188,7 @@ img {
   color: var(--white);
   /* padding: 16px 32px; */
   display: block;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
@@ -194,7 +196,7 @@ img {
 
   margin: auto;
   margin-top: 48px;
-  margin-bottom: 188px;
+  cursor: pointer;
 }
 
 .order-service-button:hover,
@@ -218,6 +220,7 @@ img {
 .features {
   display: flex;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .features-item {
@@ -237,7 +240,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* JOB */
@@ -294,22 +297,21 @@ img {
 
 /* .team-img {
   padding-bottom: 32px;
-}
+} */
 
 .team-subtitle {
   display: flex;
-  justify-content: center;
+  text-align: center;
 
 }
 
 .team-text {
   display: flex;
-  justify-content: center;
-  padding-bottom: 32px;
-} */
+  text-align: center;
+}
 
 .team-card {
-  padding: 32px 16px;
+  padding: 32px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -331,7 +333,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 16px;
+}
+
+.footer a {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 0;
 }
 
 /* second pages-Portfolio */
@@ -346,7 +353,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .projects-filter-item {
@@ -373,7 +380,7 @@ img {
   background-color: var(--ocean);
   color: var(--white);
   cursor: pointer;
-  border: 1px solid var(--ocean);
+  border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -381,6 +388,7 @@ img {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .projects-item {
